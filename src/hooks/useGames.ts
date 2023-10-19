@@ -6,6 +6,13 @@ export interface Game {
   id: number;
   name: string;
   background_image: string;
+  parent_platforms: { platform: Platform }[]; //array of objects, where each object has a property called platform of typr Platform
+}
+
+export interface Platform {
+  id: number;
+  name: string;
+  slug: string;
 }
 
 interface FetchgamesResponse {
