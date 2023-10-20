@@ -1,6 +1,5 @@
 import { GameQuery } from "../App";
 import useData from "./useData";
-import { Genre } from "./useGenres";
 
 export interface Game {
   id: number;
@@ -8,6 +7,7 @@ export interface Game {
   background_image: string;
   parent_platforms: { platform: Platform }[]; //array of objects, where each object has a property called platform of typr Platform
   metacritic: number;
+  rating_top: number;
 }
 
 export interface Platform {
