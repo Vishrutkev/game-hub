@@ -13,9 +13,9 @@ export interface Genre {
 const useGenres = () =>
   useQuery({
     queryKey: ["genres"],
-    queryFn: apiClient.getAll,
+    queryFn: apiClient.getAll, // whatever response we get from this method, we're gonna save this in cache against the above queryKey.
     staleTime: 24 * 60 * 60 * 1000,
-    initialData: { count: genres.length, results: genres },
+    initialData: genres,
   });
 
 export default useGenres;
