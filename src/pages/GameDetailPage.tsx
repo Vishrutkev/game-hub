@@ -4,7 +4,7 @@ import { GridItem, Heading, SimpleGrid, Spinner } from "@chakra-ui/react";
 import ExpandableText from "../components/ExpandableText";
 import GameAttributes from "../components/GameAttributes";
 import GameScreenShots from "../components/GameScreenShots";
-import GameTrailer from "../components/GameTRailer";
+import Trailer from "../Trailer";
 
 
 const GameDetailPage = () => {
@@ -24,7 +24,7 @@ const GameDetailPage = () => {
             </GridItem>
 
             <GridItem>
-                <GameTrailer gameId={game.id} />
+                <Trailer gameId={game.id} />
                 <GameScreenShots gameId={game.id} />
             </GridItem>
 

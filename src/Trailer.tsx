@@ -1,9 +1,9 @@
-import useTrailers from "../hooks/useTrailers"
+import useTrailers from "./hooks/useTrailers";
 
 interface Props {
     gameId: number
 }
-const GameTRailer = ({ gameId }: Props) => {
+const Trailer = ({ gameId }: Props) => {
 
     const { data, error, isLoading } = useTrailers(gameId);
 
@@ -20,4 +20,4 @@ const GameTRailer = ({ gameId }: Props) => {
         : null;
 }
 
-export default GameTRailer;
+export default Trailer;
