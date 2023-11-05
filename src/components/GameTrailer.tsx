@@ -20,4 +20,4 @@ const GameTRailer = ({ gameId }: Props) => {
         : null;
 }
 
-export default GameTRailer
+export default GameTRailer;
