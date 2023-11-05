@@ -3,8 +3,8 @@ import useGame from "../hooks/useGame";
 import { GridItem, Heading, SimpleGrid, Spinner } from "@chakra-ui/react";
 import ExpandableText from "../components/ExpandableText";
 import GameAttributes from "../components/GameAttributes";
-import GameTrailer from "../components/GameTRailer";
 import GameScreenShots from "../components/GameScreenShots";
+import GameTrailer from "../components/GameTRailer";
 
 
 const GameDetailPage = () => {
